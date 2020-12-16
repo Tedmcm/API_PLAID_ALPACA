@@ -1,12 +1,12 @@
-# Unit 5 — How do you like them apps?
+# How do you like them apps?
 
 ![Financial Planner](Images/financial-planner.png)
 
 ## Background
 
-The Consumer Division of Harold's company has decided to offer budgeting and financial planning services to customers. They want to build a report for customers that links to their banking and investment accounts and automatically refreshes the data and charts on login. However, some of the calculations are tricky, and Harold could really use some help connecting the accounts and simulating the retirement investment projections. Luckily, there are APIs available to obtain account transactions and fetch retirement portfolio prices.
+The Consumer Division of company X has decided to offer budgeting and financial planning services to customers. They want to build a report for customers that links to their banking and investment accounts and automatically refreshes the data and charts on login. However, some of the calculations are tricky, and they could really use some help connecting the accounts and simulating the retirement investment projections. Luckily, there are APIs available to obtain account transactions and fetch retirement portfolio prices.
 
-In this homework assignment, you will help Harold complete the following tasks:
+In this project, I helped company X complete the following tasks:
 
 1. [Budget Analysis with Plaid](#Budget-Analysis)
 
@@ -24,15 +24,15 @@ In this homework assignment, you will help Harold complete the following tasks:
 
 ---
 
-## Instructions
+
 
 __Note__: The data produced from the api calls will vary depending on the dates used, causing results that vary from those pictured.
 
 ### Budget Analysis
 
-In this section, you will use the Plaid API to obtain transaction and account data for the budget analysis section of the report.
+In this section, I used the Plaid API to obtain transaction and account data for the budget analysis section of the report.
 
-Follow the steps outlined in the budget starter notebook (`account_summary.ipynb`) to complete the following:
+I Followed the steps outlined in the budget starter notebook (`account_summary.ipynb`) to complete the following:
 
 1. Generate a Plaid access token to access the Developer Sandbox.
 
@@ -62,13 +62,12 @@ Follow the steps outlined in the budget starter notebook (`account_summary.ipynb
 
 ### Retirement Planner
 
-In this section, you will use the Alpaca API to fetch historical closing prices for a retirement portfolio and then run Monte Carlo simulations to project the portfolio performance at `30` years. You will then use the Monte Carlo data to answer questions about the portfolio.
+In this section, I used the Alpaca API to fetch historical closing prices for a retirement portfolio and then run Monte Carlo simulations to project the portfolio performance at `30` years. I then used the Monte Carlo data to answer questions about the portfolio.
 
-Follow the steps outlined in the budget starter notebook to complete the following:
 
 #### Monte Carlo Simulation
 
-Create a Monte Carlo simulation for the retirement portfolio:
+I Created a Monte Carlo simulation for the retirement portfolio:
 
 1. Use the Alpaca API to fetch historical closing prices for a traditional 60/40 portfolio using the `SPY` and `AGG` tickers to represent the `60%` stocks (`SPY`) and `40%` bonds (`AGG`).
 
@@ -84,7 +83,7 @@ Create a Monte Carlo simulation for the retirement portfolio:
 
 #### Retirement Analysis
 
-Use the Monte Carlo simulation data to answer the following questions:
+I used the Monte Carlo simulation data to answer the following questions:
 
 1. What are the expected cumulative returns at `30` years for the `10th`, `50th`, and `90th` percentiles?
 
@@ -100,7 +99,7 @@ Use the Monte Carlo simulation data to answer the following questions:
 
 ### Financial Report
 
-In this section, you will compile a financial report to demo your calculations to the Consumer App Team. The report should be written as a markdown file and include the following sections:
+In this section, I compiled a financial report to demo my calculations to the Consumer App Team. The report was written as a markdown file and included the following sections:
 
 1. **Budget Analysis:** Summarize the transaction data from the budget analysis and include images for each chart and table produced.
 
@@ -117,25 +116,3 @@ Harold was really impressed with your work on this planner, but commented that `
 * [Plaid API Docs](https://plaid.com/docs/)
 
 * [AlpacaDOCS](https://alpaca.markets/docs/)
-
-* [Mastering Markdown](https://guides.github.com/features/mastering-markdown/)
-
----
-
-### Hints and Considerations
-
-* For the Monte Carlo simulation, start out by running `100` simulations for one year of returns, and when you have the code worked out, run the simulation at `100–500` simulations for `30` years (this takes a long time).
-
----
-
-### Submission
-
-* Create Jupyter Notebooks for the analysis and planner and host the notebooks on GitHub.
-
-* Include a Markdown Financial Planner report that summarizes your assumptions and findings and include this report in your GitHub repo.
-
-* Submit the link to your GitHub project to Bootcampspot.
-
----
-
-© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
