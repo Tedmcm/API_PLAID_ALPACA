@@ -107,7 +107,7 @@ In this section, I compiled a financial report to demo my calculations to the Co
 
 
 
-### Resources
+### Resources...
 
 * [Plaid API Docs](https://plaid.com/docs/)
 
